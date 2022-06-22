@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function forloop(arr)
+        {
+            let sum=0;
+            for(let i=0;i<arr.length;i++)
+            {
+                sum+=arr[i];
+            }
+            return sum;
+        }
+        let arr=[1,2,3,34,55];
+        document.write("Sum using forLoop is "+forloop(arr));
+        //forloop();
+    </script>
+    <br>
+    <script>
+        function whileloop()
+        {
+            let sum=0;
+            let i=0;
+            let arr1=[1,2,3,3,67];
+            while(i<arr1.length)
+            {
+                sum+=arr1[i];
+                //console.log(i);
+                i++;     
+            }
+            return sum;
+        }
+        document.write("Sum using while loop is "+whileloop());
+    </script>
+    <script>
+        function dowhileloop()
+        {
+            let sum=0;
+            let arr2=[1,2,3];
+            let i=0;
+            do{
+                //arr2[i];
+                sum+=arr2[i];
+                i++;
+                console.log(i);
+            }while(i<arr2.length);
+            return sum;
+        }
+        document.write("Sum using do while loop is "+dowhileloop());
+    </script>
+</body>
+</html>

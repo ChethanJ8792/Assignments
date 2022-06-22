@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function numbers()
+        {
+            let numberss;
+            let evencount = 0;
+            let oddcount=0;
+            let sum=0;
+            for(let i=1;i<=100;i++)
+            {
+            numberss=[i];
+            sum+=i;//i is the one which is having all the values
+             //counting even or odd
+                if([i]%2===0)
+                {
+                    evencount++;
+                }
+                else
+                {
+                    oddcount++;
+                }
+            console.log(numberss);
+            }
+            console.log("even count :"+evencount);
+            console.log("odd count : "+oddcount);
+            //sum and average
+            console.log("Sum : "+sum);
+            console.log("Average "+sum/100);
+        return numberss;
+        //return will execute if document is given
+        }
+        document.write("Total random numbers are : "+numbers());
+       
+    </script>
+</body>
+</html>
